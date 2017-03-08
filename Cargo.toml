@@ -1,0 +1,15 @@
+[package]
+name = "hash_set"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["hash", "set"]
+description = "hash set"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-hash_set.git"
+homepage = "https://github.com/nathanfaucett/rs-hash_set"
+
+[dependencies]
+collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits"}
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map"}
