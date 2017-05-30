@@ -134,7 +134,7 @@ impl<T, S> HashSet<T, S>
     }
 }
 
-impl<T, S> Collection for HashSet<T, S>
+impl<T, S> CollectionMut for HashSet<T, S>
     where T: Eq + Hash,
           S: BuildHasher
 {
@@ -148,7 +148,7 @@ impl<T, S> Collection for HashSet<T, S>
     }
 }
 
-impl<'a, T, Q: ?Sized, S> Remove<&'a Q> for HashSet<T, S>
+impl<'a, T, Q: ?Sized, S> RemoveMut<&'a Q> for HashSet<T, S>
     where T: Eq + Hash + Borrow<Q>,
           Q: Eq + Hash,
           S: BuildHasher
