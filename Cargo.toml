@@ -11,5 +11,5 @@ repository = "https://github.com/nathanfaucett/rs-hash_set.git"
 homepage = "https://github.com/nathanfaucett/rs-hash_set"
 
 [dependencies]
-collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits"}
+collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits", features=["no_std"]}
 hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map"}
