@@ -134,7 +134,7 @@ impl<T, S> HashSet<T, S>
     }
 }
 
-impl<T, S> CollectionMut for HashSet<T, S>
+impl<T, S> Collection for HashSet<T, S>
     where T: Eq + Hash,
           S: BuildHasher
 {
@@ -142,6 +142,12 @@ impl<T, S> CollectionMut for HashSet<T, S>
     fn len(&self) -> usize {
         self.hash_map.len()
     }
+}
+
+impl<T, S> CollectionMut for HashSet<T, S>
+    where T: Eq + Hash,
+          S: BuildHasher
+{
     #[inline(always)]
     fn clear(&mut self) {
         self.hash_map.clear()
