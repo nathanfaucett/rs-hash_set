@@ -9,12 +9,12 @@ dependencies = [
 [[package]]
 name = "collection_traits"
 version = "0.1.0"
-source = "git+https://github.com/nathanfaucett/rs-collection_traits#c7e3730fd3d6ed3ce5df1a25486cf0b051025ca6"
+source = "git+https://github.com/nathanfaucett/rs-collection_traits#a75d1c20655834c53b29a232cad5f1a3b1c1ddb3"
 
 [[package]]
 name = "hash_map"
 version = "0.1.0"
-source = "git+https://github.com/nathanfaucett/rs-hash_map#cec32dc98c0814256c722ce16c7996e85284fa2a"
+source = "git+https://github.com/nathanfaucett/rs-hash_map#04cba96a513835a60f708e300771892b95e88444"
 dependencies = [
  "collection_traits 0.1.0 (git+https://github.com/nathanfaucett/rs-collection_traits)",
  "prng 0.1.0 (git+https://github.com/nathanfaucett/rs-prng)",
